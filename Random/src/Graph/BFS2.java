@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class BFS {
+public class BFS2 {
 
     static Queue queue = new LinkedList();
 
@@ -20,11 +20,11 @@ public class BFS {
 
             i = (int) queue.poll();
 
-            for(j = 0;j<n-1;j++){
+            for(j = 1;j<n;j++){
 
                 if(arr[i][j] == 1 && visited[j] == 0){
 
-                    System.out.print(j+1+" ");
+                    System.out.print(j+" ");
                     visited[j] = 1;
                     queue.add(j);
                 }
@@ -41,23 +41,22 @@ public class BFS {
         System.out.print("Enter number of vertices: ");
         n = scanner.nextInt();
 
-        int[][] arr = new int[n][n];
+        int[][] arr = new int[n+1][n+1];
 
         System.out.println("Enter graph data in matrix: ");
-        for(int i=0;i<n; i++){
+        for(int i=0;i<n+1; i++){
 
-            for(int j=0;j<n;j++){
+            for(int j=0;j<n+1;j++){
                 arr[i][j] = scanner.nextInt();
             }
 
         }
 
-//        System.out.print("Enter starting index: ");
-//
-//        int start = scanner.nextInt();
+        System.out.print("Enter starting index: ");
 
-        System.out.println("The node which are reachable are: ");
-        BFS(arr, 0, n+1);
+        int start = scanner.nextInt();
+
+        BFS(arr, start, n+1);
 
     }
 }
