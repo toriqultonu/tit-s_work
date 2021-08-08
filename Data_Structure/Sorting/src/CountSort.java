@@ -1,8 +1,7 @@
 import java.util.Arrays;
 
 public class CountSort {
-    static void countSort(int[] arr)
-    {
+    static void countSort(int[] arr) {
         int max = Arrays.stream(arr).max().getAsInt();
         int min = Arrays.stream(arr).min().getAsInt();
         int range = max - min + 1;
@@ -26,18 +25,15 @@ public class CountSort {
         }
     }
 
-    static void printArray(int[] arr)
-    {
+    static void printArray(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
         System.out.println("");
     }
 
-    // Driver code
-    public static void main(String[] args)
-    {
-        int[] arr = { -5, -10, 0, -3, 8, 5, -1, 10 };
+    public static void main(String[] args) {
+        int[] arr = {-5, -10, 0, -3, 8, 5, -1, 10};
         countSort(arr);
         printArray(arr);
     }

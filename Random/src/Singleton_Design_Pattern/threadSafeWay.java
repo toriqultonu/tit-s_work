@@ -1,13 +1,15 @@
 package Singleton_Design_Pattern;
 
 
-class Abcde{
+class Abcde {
     static Abcde obj = null;
-    private Abcde(){
+
+    private Abcde() {
         System.out.println("Instance created");
     }
-    public static synchronized Abcde  getInstance(){     // synchronized keyword used to make the getInstance method synchronized for all threads.
-        if(obj == null){
+
+    public static synchronized Abcde getInstance() {     // synchronized keyword used to make the getInstance method synchronized for all threads.
+        if (obj == null) {
             obj = new Abcde();
         }
         return obj;
@@ -15,15 +17,15 @@ class Abcde{
 }
 
 public class threadSafeWay {
-    public static  void main(String[] args){
-        Thread t1 = new Thread(new Runnable(){
-            public void run(){
+    public static void main(String[] args) {
+        Thread t1 = new Thread(new Runnable() {
+            public void run() {
                 Abcde ob = Abcde.getInstance();
             }
         });
 
-        Thread t2 = new Thread(new Runnable(){
-            public void run(){
+        Thread t2 = new Thread(new Runnable() {
+            public void run() {
                 Abcde ob = Abcde.getInstance();
             }
         });

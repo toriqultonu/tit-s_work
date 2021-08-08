@@ -1,15 +1,16 @@
 package Singleton_Design_Pattern;
 
-enum Abd{
+enum Abd {
     INSTANCE;
     int i;
-    public void show(){
+
+    public void show() {
         System.out.println(i);
     }
 }
 
 public class enumWay {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Abd ob = Abd.INSTANCE;
         ob.i = 5;
         ob.show();

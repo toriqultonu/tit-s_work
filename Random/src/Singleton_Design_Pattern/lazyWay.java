@@ -1,13 +1,14 @@
 package Singleton_Design_Pattern;
 
-class Abcd
-{
+class Abcd {
     static Abcd obj = null;
-    private Abcd(){
+
+    private Abcd() {
         System.out.println("Instance created");
     }
-    public static Abcd getInstance(){
-        if(obj == null){                        // Creating singleton in lazyway to prevent auto creating of instance.
+
+    public static Abcd getInstance() {
+        if (obj == null) {                        // Creating singleton in lazyway to prevent auto creating of instance.
             obj = new Abcd();
         }
         return obj;
@@ -15,7 +16,7 @@ class Abcd
 }
 
 public class lazyWay {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Abcd ob1 = Abcd.getInstance();
         Abcd ob2 = Abcd.getInstance();

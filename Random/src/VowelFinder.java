@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class VowelFinder {
 
-    static String VowelOnly(String str){
+    static String VowelOnly(String str) {
         String vowel = "aeiou";
         StringBuilder sb = new StringBuilder();
         for (char c : str.toCharArray()) {
@@ -13,7 +13,7 @@ public class VowelFinder {
         return sb.toString();
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String str = scanner.next();
         System.out.println(VowelOnly(str));

@@ -1,7 +1,6 @@
 public class InsertionSort {
 
-    void sort(int arr[])
-    {
+    void sort(int arr[]) {
         int n = arr.length;
         for (int i = 1; i < n; ++i) {
             int key = arr[i];
@@ -13,14 +12,14 @@ public class InsertionSort {
             arr[j + 1] = key;
         }
     }
-    static void display(int arr[])
-    {
-        for(int a:arr){
-            System.out.print(a+", ");
+
+    static void display(int arr[]) {
+        for (int a : arr) {
+            System.out.print(a + ", ");
         }
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         int arr[] = {13, 4, 64, 6, 23, 6, 5};
 
         InsertionSort ob = new InsertionSort();
