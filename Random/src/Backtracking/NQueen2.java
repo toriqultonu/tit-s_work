@@ -1,45 +1,140 @@
 package Backtracking;
 
-
 import java.util.Scanner;
-import java.util.Stack;
 
-public class NQueen2 {
+class NQueen2 {
 
-    static void checkValidity(int[] valid, Stack stk, int n){
-        int i =1;
+    static int[] stk = new int[100];
+    static int top = 0;
+    static int[] valid = new int[100];
 
-        if(valid[i] == 1 || Integer.parseInt(stk.get(i-1).toString()) == 1){
+    public static int validSum(){
 
-                System.out.print(stk+" "+i);
-
-
+        int sum = 0;
+        for(int i = 1;i<100;i++){
+            sum = sum + valid[i];
         }
-
-        else if(valid[i] != 1 && true){
-
-        }
-
+        return sum;
     }
+
+    public static void printStack(){
+
+        for(int i = 1; i <= top; i++){
+            System.out.print(stk[i]+" ");
+        }
+    }
+
+
+    public static boolean isSafe(int num, int lim, int length){
+
+        if(valid[num] == 1){
+
+            System.out.print("Backtrack from node: ");
+            printStack();
+            System.out.println(num);
+            return false;
+        }
+        else{
+            if(1 <= num && num <= lim){
+
+                for(int m = 1, t = top; m < length+1; m++, t--){
+                    if(Math.abs(stk[t] - num) == m){
+                        System.out.print("Backtrack from node: ");
+                        printStack();
+                        System.out.println(num);
+                        return false;
+                    }
+                }
+            }
+        }
+
+        valid[num] = 1;
+        top = top+1;
+        stk[top] = num;
+        return true;
+    }
+
+    public static void nQueen(int num, int total){
+
+        int length = 1;
+        int initial = 1;
+        int p;
+        top = top+1;
+        stk[top] = num;
+        valid[num] = 1;
+
+        while(length != 0){
+
+            if(validSum() == total){
+
+                System.out.print("Solution: ");
+                printStack();
+                p = stk[top];
+                stk[top] = 0;
+                top = top-1;
+                valid[p] = 0;
+                length = length - 1;
+
+                while (stk[top] == total){
+
+                    p = stk[top];
+                    stk[top] = 0;
+                    top = top - 1;
+                    valid[p] = 0;
+                    length = length - 1;
+
+                }
+                  p = stk[top];
+                stk[top] = 0;
+                top = top - 1;
+                valid[p] = 0;
+                length = length - 1;
+                initial = p + 1;
+            }
+
+            boolean k = isSafe(initial, total, length);
+                if(k == false){
+
+                    if(initial == total){
+
+                        while(stk[top] == total && length != 1){
+
+                            p = stk[top];
+                            stk[top] = 0;
+                            top = top-1;
+                            valid[p] = 0;
+                            length = length-1;
+                        }
+                        p = stk[top];
+                        stk[top] = 0;
+                        top = top-1;
+                        valid[p] = 0;
+                        length = length - 1;
+                        initial = p+1;
+                        continue;
+                    }
+                    else{
+                        initial += 1;
+                        continue;
+                    }
+                }
+                else {
+                    initial = 1;
+                    length += 1;
+                }
+            }
+        }
 
     public static void main(String[] args){
 
-        int n;
-        System.out.println("Enter queen number: ");
         Scanner scanner = new Scanner(System.in);
+        int n;
+
+        System.out.print("Enter queen's number: ");
         n = scanner.nextInt();
 
-
-
-        for(int i=1;i<=n;i++){
-
-            int[] valid = new int[n+1];
-            valid[i] = 1;
-            Stack<Integer> stk = new Stack<>();
-            stk.push(i);
-
-
+        for(int i =1; i<=n;i++){
+            nQueen(i, n);
         }
-
     }
 }
