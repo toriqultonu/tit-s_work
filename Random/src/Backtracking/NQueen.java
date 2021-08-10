@@ -1,6 +1,6 @@
 package Backtracking;
 
-class NQueenProblem {
+class NQueen3 {
     final int N = 4;
 
     /* A utility function to print solution */
@@ -102,7 +102,7 @@ class NQueenProblem {
     // driver program to test above function
     public static void main(String args[])
     {
-        NQueenProblem Queen = new NQueenProblem();
+        NQueen3 Queen = new NQueen3();
         Queen.solveNQ();
     }
 }

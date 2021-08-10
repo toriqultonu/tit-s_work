@@ -17,11 +17,22 @@ class NQueen2 {
         return sum;
     }
 
+
+
     public static void printStack(){
 
-        for(int i = 1; i <= top; i++){
-            System.out.print(stk[i]+" ");
-        }
+       for(int i=1;i<=top;i++){
+
+           for(int j= 1;j<=top;j++){
+               if(stk[i] == j){
+                   System.out.print("Q" + "  ");
+               }
+               else{
+                   System.out.print("*"+"  ");
+               }
+           }
+           System.out.println();
+       }
     }
 
 
@@ -29,9 +40,6 @@ class NQueen2 {
 
         if(valid[num] == 1){
 
-            System.out.print("Backtrack from node: ");
-            printStack();
-            System.out.println(num);
             return false;
         }
         else{
@@ -39,9 +47,7 @@ class NQueen2 {
 
                 for(int m = 1, t = top; m < length+1; m++, t--){
                     if(Math.abs(stk[t] - num) == m){
-                        System.out.print("Backtrack from node: ");
-                        printStack();
-                        System.out.println(num);
+
                         return false;
                     }
                 }
@@ -67,7 +73,7 @@ class NQueen2 {
 
             if(validSum() == total){
 
-                System.out.print("Solution: ");
+                System.out.println("Solution: ");
                 printStack();
                 p = stk[top];
                 stk[top] = 0;
