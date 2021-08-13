@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0618eb6d-a121-463e-adad-d3354ce2286c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/knapsack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/knapsack_dynamic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Random/Backtracking/NQueen2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Random/Backtracking/NQueen2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Random/Backtracking/NQueenProblem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backtracking/NQueen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backtracking/NQueen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backtracking/NQueen2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backtracking/NQueen2.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1vq5GJBzzgKXE1PuGkWfeMboDHx" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="G:/OnlineClass/4th Semester/Algorithm/final/Problem01" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Backtracking" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.knapsack">
+    <configuration name="Knapsack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Knapsack" />
+      <module name="Random" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NQueen2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Backtracking.NQueen2" />
+      <module name="Random" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Backtracking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NQueen3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Backtracking.NQueen3" />
+      <module name="Random" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Backtracking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NQueen3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Backtracking.NQueen3" />
+      <module name="Random" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Backtracking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NQueenProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Backtracking.NQueenProblem" />
+      <module name="Random" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Backtracking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="knapsack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="knapsack" />
+      <module name="Random" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.knapsack" />
+        <item itemvalue="Application.Knapsack" />
+        <item itemvalue="Application.NQueen2" />
+        <item itemvalue="Application.NQueenProblem" />
+        <item itemvalue="Application.NQueen3" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0618eb6d-a121-463e-adad-d3354ce2286c" name="Default Changelist" comment="" />
+      <created>1627276680086</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627276680086</updated>
+      <workItem from="1627276681665" duration="2697000" />
+      <workItem from="1627349005139" duration="4466000" />
+      <workItem from="1627483019756" duration="26000" />
+      <workItem from="1627795812846" duration="1136000" />
+      <workItem from="1627820878540" duration="13000" />
+      <workItem from="1628362460203" duration="2654000" />
+      <workItem from="1628393659798" duration="775000" />
+      <workItem from="1628417522498" duration="1421000" />
+      <workItem from="1628420275258" duration="3670000" />
+      <workItem from="1628429094160" duration="916000" />
+      <workItem from="1628438882412" duration="79000" />
+      <workItem from="1628450029635" duration="601000" />
+      <workItem from="1628507525298" duration="1056000" />
+      <workItem from="1628515486736" duration="873000" />
+      <workItem from="1628522550919" duration="327000" />
+      <workItem from="1628522922364" duration="14000" />
+      <workItem from="1628522995033" duration="40000" />
+      <workItem from="1628523267504" duration="57000" />
+      <workItem from="1628523829117" duration="38000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1627279827033">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1627279827033" />
+    <state x="592" y="220" key="FileChooserDialogImpl" timestamp="1628523864367">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="-1180" y="275" key="FileChooserDialogImpl/-1920.0.1920.1030/0.0.1536.824@-1920.0.1920.1030" timestamp="1628423277785" />
+    <state x="592" y="220" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1628523864367" />
+    <state width="1493" height="265" key="GridCell.Tab.0.bottom" timestamp="1628522879542">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1877" height="353" key="GridCell.Tab.0.bottom/-1920.0.1920.1030/0.0.1536.824@-1920.0.1920.1030" timestamp="1628430772480" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1627797248458" />
+    <state width="1493" height="265" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1628522879542" />
+    <state width="1493" height="265" key="GridCell.Tab.0.center" timestamp="1628522879542">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1877" height="353" key="GridCell.Tab.0.center/-1920.0.1920.1030/0.0.1536.824@-1920.0.1920.1030" timestamp="1628430772480" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1627797248457" />
+    <state width="1493" height="265" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1628522879542" />
+    <state width="1493" height="265" key="GridCell.Tab.0.left" timestamp="1628522879542">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1877" height="353" key="GridCell.Tab.0.left/-1920.0.1920.1030/0.0.1536.824@-1920.0.1920.1030" timestamp="1628430772480" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1627797248457" />
+    <state width="1493" height="265" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1628522879542" />
+    <state width="1493" height="265" key="GridCell.Tab.0.right" timestamp="1628522879542">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1877" height="353" key="GridCell.Tab.0.right/-1920.0.1920.1030/0.0.1536.824@-1920.0.1920.1030" timestamp="1628430772480" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1627797248458" />
+    <state width="1493" height="265" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1628522879542" />
+    <state x="-1154" y="222" key="RollbackChangesDialog" timestamp="1628362986175">
+      <screen x="-1920" y="0" width="1920" height="1030" />
+    </state>
+    <state x="-1154" y="222" key="RollbackChangesDialog/-1920.0.1920.1030/0.0.1536.824@-1920.0.1920.1030" timestamp="1628362986175" />
+  </component>
+</project>
