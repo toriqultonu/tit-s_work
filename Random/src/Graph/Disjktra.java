@@ -2,11 +2,10 @@ package Graph;
 
 import java.util.*;
 import java.lang.*;
-import java.io.*;
 
 class ShortestPath {
 
-    static final int V = 3;
+    static int V;
     int minDistance(int dist[], Boolean sptSet[])
     {
         int min = Integer.MAX_VALUE, min_index = -1;
@@ -26,10 +25,10 @@ class ShortestPath {
         for (int i = 0; i < V; i++) {
 
             if (dist[i] == Integer.MAX_VALUE) {
-                System.out.println(i + " \t\t\t " + "not reachable");
+                System.out.println(i+1 + " \t\t\t " + "not reachable");
             }
             else
-            System.out.println(i + " \t\t\t " + dist[i]);
+            System.out.println(i+1 + " \t\t\t " + dist[i]);
         }
     }
 
@@ -63,14 +62,22 @@ class ShortestPath {
 
     public static void main(String[] args)
     {
+        Scanner scanner = new Scanner(System.in);
+        int v, e, r,c,val;
+        v = scanner.nextInt();
+        e = scanner.nextInt();
 
+        int graph[][]  = new int[v][v];
 
-        int graph[][]  = new int[][]{
+        for(int i =0;i<e;i++){
 
-                {0,5,0},
-                {5,0,8},
-                {0,8,0}
-        };
+            r = scanner.nextInt();
+            c = scanner.nextInt();
+            val = scanner.nextInt();
+            graph[r-1][c-1] = val;
+            graph[c-1][r-1] = val;
+        }
+        V = v;
 
         ShortestPath t = new ShortestPath();
         t.dijkstra(graph, 0);
