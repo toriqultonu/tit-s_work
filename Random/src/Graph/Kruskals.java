@@ -1,13 +1,14 @@
+package Graph;
+
 import java.util.*;
 
 class GFG
 {
 
-    static int V = 5;
-    static int[] parent = new int[V];
+    static int V ;
+    static int[] parent;
     static int INF = Integer.MAX_VALUE;
 
-    // Find set of vertex i
     static int find(int i)
     {
         while (parent[i] != i)
@@ -15,9 +16,6 @@ class GFG
         return i;
     }
 
-    // Does union of i and j. It returns
-// false if i and j are already in same
-// set.
     static void union1(int i, int j)
     {
         int a = find(i);
@@ -25,16 +23,13 @@ class GFG
         parent[a] = b;
     }
 
-    // Finds MST using Kruskal's algorithm
     static void kruskalMST(int cost[][])
     {
-        int mincost = 0; // Cost of min MST.
+        int mincost = 0;
 
-        // Initialize sets of disjoint sets.
         for (int i = 0; i < V; i++)
             parent[i] = i;
 
-        // Include minimum weight edges one by one
         int edge_count = 0;
         while (edge_count < V - 1)
         {
@@ -54,32 +49,37 @@ class GFG
 
             union1(a, b);
             System.out.printf("Edge %d:(%d, %d) cost:%d \n",
-                    edge_count++, a, b, min);
+                    edge_count++, a+1, b+1, min);
             mincost += min;
         }
         System.out.printf("\n Minimum cost= %d \n", mincost);
     }
 
-    // Driver code
     public static void main(String[] args)
     {
-/* Let us create the following graph
-        2 3
-    (0)--(1)--(2)
-    | / \ |
-    6| 8/ \5 |7
-    | /     \ |
-    (3)-------(4)
-            9         */
-        int cost[][] = {
-                { INF, 2, INF, 6, INF },
-                { 2, INF, 3, 8, 5 },
-                { INF, 3, INF, INF, 7 },
-                { 6, 8, INF, INF, 9 },
-                { INF, 5, 7, 9, INF },
-        };
 
-        // Print the solution
+        Scanner scanner = new Scanner(System.in);
+        int v, e, r,c,val;
+        v = scanner.nextInt();
+        e = scanner.nextInt();
+
+        int cost[][]  = new int[v][v];
+        for(int i=0;i<v;i++){
+            for(int j=0;j<v;j++){
+                cost[i][j] = INF;
+            }
+        }
+
+        for(int i =0;i<e;i++){
+
+            r = scanner.nextInt();
+            c = scanner.nextInt();
+            val = scanner.nextInt();
+            cost[r-1][c-1] = val;
+            cost[c-1][r-1] = val;
+        }
+        V = v;
+         parent = new int[V];
         kruskalMST(cost);
     }
 }
