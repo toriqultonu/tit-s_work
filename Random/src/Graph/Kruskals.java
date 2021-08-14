@@ -2,7 +2,7 @@ package Graph;
 
 import java.util.*;
 
-class GFG
+class Kruskal
 {
 
     static int V ;

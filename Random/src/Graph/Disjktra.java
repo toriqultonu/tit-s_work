@@ -3,7 +3,7 @@ package Graph;
 import java.util.*;
 import java.lang.*;
 
-class ShortestPath {
+class Dijkstra {
 
     static int V;
     int minDistance(int dist[], Boolean sptSet[])
@@ -79,7 +79,7 @@ class ShortestPath {
         }
         V = v;
 
-        ShortestPath t = new ShortestPath();
+        Dijkstra t = new Dijkstra();
         t.dijkstra(graph, 0);
     }
 }
