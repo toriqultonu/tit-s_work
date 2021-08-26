@@ -1,9 +1,34 @@
-package Tree;
+package AlgoProbs;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class BrunchSum {
+class Node{
+
+    int key;
+    Node left, right;
+
+    public Node(int item){
+        key = item;
+        left = right = null;
+    }
+}
+
+class BinaryTree {
+
+    Node root;
+
+    BinaryTree(int key){
+        root = new Node(key);
+    }
+
+    BinaryTree(){
+        root = null;
+    }
+
+}
+
+public class BranchSum {
     public static List<Integer> getSumArray(BinaryTree tree){
         List<Integer> array = new ArrayList<>();
         int sum  = 0;
@@ -16,7 +41,7 @@ public class BrunchSum {
         if(node == null) return;
 
         int newsum = node.key + sum;
-        
+
         if(node.left == null && node.right == null){
             array.add(newsum);
             return;
