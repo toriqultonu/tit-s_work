@@ -1,3 +1,5 @@
+package Sorting;
+
 public class SelectionSort {
 
     void swap(int a, int b) {
