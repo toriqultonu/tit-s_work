@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64870efa-3fe7-490f-8867-3d69ba1490e0" name="Changes" comment="basic array">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Arrays/WorkingWith2DArrays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/List/WorkingWithList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Random" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -116,6 +113,8 @@
       <option name="presentableId" value="Default" />
       <updated>1637683881649</updated>
       <workItem from="1637683882789" duration="2959000" />
+      <workItem from="1637779806655" duration="577000" />
+      <workItem from="1637818382761" duration="28000" />
     </task>
     <task id="LOCAL-00001" summary="basic array">
       <created>1637684885956</created>
@@ -147,6 +146,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="basic array" />
