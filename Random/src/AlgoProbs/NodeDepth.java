@@ -1,52 +1,56 @@
 package AlgoProbs;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Scanner;
 
-class Level{
+class Program{
 
-    public Node root;
-    int depth;
+    class BinaryTree{
 
-    public Level(Node root, int depth){
-        this.root = root;
-        this.depth = depth;
-    }
-}
+        int value;
+        BinaryTree left;
+        BinaryTree right;
 
-public class NodeDepth {
-
-    public static int nodeDepths(Node root){
-
-        int sumOfDepths = 0;
-        List<Level> stack = new ArrayList<>();
-
-        stack.add(new Level(root, 0));
-
-        while (stack.size() > 0){
-            Level top = stack.remove(stack.size() - 1);
-            Node node = top.root;
-            int depth = top.depth;
-            if(node == null){
-                continue;
-            }
-            sumOfDepths += depth;
-            stack.add(new Level(node.left, depth+1));
-            stack.add(new Level(node.right, depth+1));
+        public BinaryTree(int value){
+            this.value = value;
+            this.left = null;
+            this.right = null;
         }
-        return sumOfDepths;
+    }
+
+    class Level{
+
+        BinaryTree root;
+        int depth;
+
+        public Level(BinaryTree root, int depth){
+            this.root = root;
+            this.depth = depth;
+        }
+    }
+
+    public static int nodeDepth(BinaryTree root){
+        int sumofDepth = 0;
+
+
+
+        return sumofDepth;
     }
 
     public static void main(String[] args){
 
-        BinaryTree tree = new BinaryTree();
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        int q = number/10;
+        int r = number%10;
+        int sum = 0;
 
-        tree.root = new Node(1);
+        while(r != 0){
+            sum = sum+r;
+            r = q%10;
+            q = q/10;
+        }
 
-        tree.root.left = new Node(2);
-        tree.root.right = new Node(3);
-        tree.root.left.left = new Node(4);
-
-        System.out.println(nodeDepths(tree.root));
+        System.out.println("result: "+sum);
     }
+
 }
