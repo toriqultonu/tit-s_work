@@ -1,27 +1,32 @@
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-public class test {
 
-    static void change(int[] arr, int n){
-
-//        arr[arr.length-1] = 5;
-//        System.out.println(arr.toString());
-        n = 10;
-        System.out.println(n);
+class Solution {
+    public String longestPalindrome(String str) {
+        int[] currentLongest = {0, 1};
+        for (int i = 1; i < str.length(); i++) {
+            int[] odd = getLongestPalindromeFrom(str, i - 1, i + 1);
+            int[] even = getLongestPalindromeFrom(str, i - 1, i);
+            int[] longest = odd[1] - odd[0] > even[1] - even[0] ? odd : even;
+            currentLongest =
+                    currentLongest[1] - currentLongest[0] > longest[1] - longest[0]
+                            ? currentLongest
+                            : longest;
+        }
+        return str.substring(currentLongest[0], currentLongest[1]);
     }
 
-    public static void main(String[] args){
-
-        int[] array = {1,2,3,4,6};
-
-        int n = 5;
-        System.out.println(n);
-        change(array, n);
-        System.out.println(n);
-
-       // System.out.println(array.toString());
-
-       // System.out.println(array.toString());
-
+    public static int[] getLongestPalindromeFrom(String str, int leftIdx, int rightIdx){
+while (leftIdx >= 0 && rightIdx < str.length()) {
+        if (str.charAt(leftIdx) != str.charAt(rightIdx)) {
+            break;
+        }
+        leftIdx--;
+        rightIdx++;
     }
+return new int[] {leftIdx + 1, rightIdx};
+}
 }
